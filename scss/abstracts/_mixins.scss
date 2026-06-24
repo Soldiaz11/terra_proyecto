@@ -1,0 +1,20 @@
+// ===================================================
+// MIXINS — herramientas reutilizables
+// ===================================================
+
+// Media queries: se usa como @include responde(movil) { ... }
+@mixin responde($punto) {
+  @if $punto == movil {
+    @media (max-width: $bp-movil) { @content; }
+  } @else if $punto == tablet {
+    @media (max-width: $bp-tablet) { @content; }
+  }
+}
+
+// Flex centrado rápido. Dirección por defecto: fila.
+@mixin flex-centrado($direccion: row) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: center;
+  align-items: center;
+}

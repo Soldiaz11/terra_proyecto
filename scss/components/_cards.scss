@@ -1,0 +1,64 @@
+// ===================================================
+// CARDS DE DESTINOS
+// ===================================================
+
+// Contenedor flexible: las cards envuelven solas al sumar más destinos
+.grid_destinos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: $color-blanco;
+  border: 1px solid $color-borde;
+  border-radius: $radio;
+  overflow: hidden;
+  padding: 12px;
+  width: 300px;
+  // Transición para el efecto de elevación al pasar el mouse
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  // Efecto hover: la card se eleva y proyecta sombra (transform + transition)
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(22, 38, 63, 0.15);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; // recorta la imagen sin deformarla
+    border-radius: 12px;
+  }
+
+  h3 {
+    margin: 12px 0 4px;
+    font-family: $fuente-titulo;
+    color: $color-oscuro;
+  }
+}
+
+// Descripción dentro de la card
+.descripcion {
+  color: $color-gris;
+  font-size: 15px;
+  font-family: $fuente-texto;
+  margin-top: 1px;
+  text-align: left;
+}
+
+// Fila de precio + duración
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  color: $color-oscuro;
+  font-family: $fuente-texto;
+
+  .dias {
+    color: $color-acento;
+  }
+}

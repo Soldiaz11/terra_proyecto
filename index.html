@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Terra Viajes | Tours curados para viajeros que buscan algo más</title>
+  <meta name="description" content="Terra Viajes diseña tours a medida a Patagonia, Japón, Brasil y más. Itinerarios curados a mano para viajes que transforman.">
+  <meta name="keywords" content="viajes, tours, turismo, Patagonia, Japón, Brasil, agencia de viajes">
+  <meta name="author" content="Terra Viajes">
+  <meta name="robots" content="index, follow">
+
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Librería de animaciones AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- BANNER -->
+  <header>
+    <img class="logo" src="images/terra_logo_wordmark.svg" alt="Logo de Terra Viajes">
+    <nav>
+      <ul class="navegador">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pages/destinos.html">Destinos</a></li>
+        <li><a href="pages/tours.html">Tours</a></li>
+        <li><a href="pages/nosotros.html">Nosotros</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="parrafo_uno">VIAJES QUE TRANSFORMAN</p>
+      <h1>Descubrí el mundo <span>a tu ritmo</span></h1>
+      <p class="parrafo_dos">Tours curados para viajeros que buscan algo más</p>
+      <a class="boton" href="pages/destinos.html">EXPLORAR DESTINOS</a>
+    </section>
+
+    <!-- SECCIÓN DESTACADOS -->
+    <section class="destacados">
+      <p class="etiqueta">DESTACADOS</p>
+      <h2>Destinos que inspiran</h2>
+
+      <!-- CARDS -->
+      <div class="grid_destinos">
+
+        <article class="card" data-aos="fade-up">
+          <img src="images/patagonia.jpg" alt="Glaciares de la Patagonia argentina">
+          <h3>PATAGONIA ARGENTINA</h3>
+          <p class="descripcion">Glaciares, viento y silencio.</p>
+          <hr>
+          <div class="info">
+            <span>desde $1.200</span>
+            <span class="dias">10 días</span>
+          </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/japon.jpg" alt="Templos y ciudades de Japón">
+          <h3>JAPÓN</h3>
+          <p class="descripcion">Tradición y modernidad.</p>
+          <hr>
+          <div class="info">
+            <span>desde $2.800</span>
+            <span class="dias">14 días</span>
+          </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/brasil.jpg" alt="Playas y selva de Brasil">
+          <h3>BRASIL</h3>
+          <p class="descripcion">Playas, samba y selva amazónica.</p>
+          <hr>
+          <div class="info">
+            <span>desde $1.600</span>
+            <span class="dias">12 días</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Todos los derechos reservados - Terra Viajes</p>
+  </footer>
+
+  <!-- Script de animaciones AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>

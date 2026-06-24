@@ -1,0 +1,35 @@
+// ===================================================
+// BASE — estilos generales del documento
+// ===================================================
+
+body {
+  background-color: $color-fondo;
+  font-family: $fuente-texto;
+}
+
+// Enlaces sin subrayado, blancos por defecto (nav)
+a {
+  text-decoration: none;
+  color: $color-blanco;
+}
+
+// span en bloque (lo usás en el h1 del hero)
+span {
+  display: block;
+}
+
+// Línea divisoria de las cards
+hr {
+  border: none;
+  height: 1px;
+  background-color: $color-borde;
+  width: 100%;
+  margin-top: 5px;
+}
+
+// Contenedor principal
+main {
+  background-color: $color-fondo;
+  width: 100%;
+  min-height: 80vh;
+}

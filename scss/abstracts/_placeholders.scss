@@ -1,0 +1,23 @@
+// ===================================================
+// PLACEHOLDERS — se reutilizan con @extend
+// ===================================================
+
+// Caja base de las secciones de contenido
+%seccion-base {
+  background-color: $color-fondo;
+  padding: 40px 20px;
+}
+
+// Título serif de marca (navy + Playfair)
+%titulo-serif {
+  font-family: $fuente-titulo;
+  color: $color-oscuro;
+}
+
+// Etiqueta superior naranja (ej. "DESTACADOS", "CATÁLOGO")
+%etiqueta-acento {
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: $color-acento;
+  margin-bottom: 5px;
+}

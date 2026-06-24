@@ -1,0 +1,26 @@
+// ===================================================
+// PÁGINA CONTACTO — encabezado
+// ===================================================
+
+.contacto {
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 50px;
+
+  p {
+    letter-spacing: 3px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: $color-acento;
+  }
+
+  h1 {
+    @extend %titulo-serif;
+    font-size: 50px;
+    margin-top: 5px;
+
+    @include responde(movil) { font-size: 34px; }
+  }
+
+  @include responde(movil) { margin-left: 16px; }
+}

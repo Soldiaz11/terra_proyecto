@@ -1,0 +1,13 @@
+// ===================================================
+// PÁGINA DESTINOS — título del catálogo
+// ===================================================
+
+.titulo {
+  @extend %titulo-serif;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 42px;
+  text-align: left;
+
+  @include responde(movil) { font-size: 30px; }
+}

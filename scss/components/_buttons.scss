@@ -1,0 +1,29 @@
+// ===================================================
+// BOTONES
+// ===================================================
+
+// Estilo base de botón (se aplica a <button> y a <a class="boton">)
+button,
+.boton {
+  display: inline-block;
+  color: $color-blanco;
+  background-color: $color-acento;
+  border: 0;
+  border-radius: 30px;
+  padding: 1rem 1.5rem;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: $fuente-texto;
+  font-weight: bold;
+  cursor: pointer;
+  // Transición + transform: el botón se agranda y oscurece al pasar el mouse
+  transition: transform 0.25s ease, background-color 0.25s ease;
+
+  // El enlace dentro del botón hereda el color blanco
+  a { color: $color-blanco; }
+
+  &:hover {
+    background-color: $color-acento-oscuro;
+    transform: scale(1.05);
+  }
+}

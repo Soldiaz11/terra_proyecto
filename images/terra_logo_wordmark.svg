@@ -1,0 +1,13 @@
+<svg width="100%" viewBox="0 0 680 220" role="img" xmlns="http://www.w3.org/2000/svg" style=""><defs><mask id="imagine-text-gaps-t29wzy" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="220" fill="white"/><rect x="172.9947967529297" y="59" width="334.01043701171875" height="83.33333587646484" fill="black" rx="2"/><rect x="230.53646850585938" y="152.33334350585938" width="218.2604217529297" height="17.33333396911621" fill="black" rx="2"/></mask></defs>
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Logo Terra Viajes</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Wordmark minimalista para Terra, empresa de tours de viajes</desc>
+
+  
+
+  <text x="340" y="125" text-anchor="middle" style="fill:rgb(232, 224, 216);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Cormorant Garamond&quot;, serif;font-size:72px;font-weight:300;text-anchor:middle;dominant-baseline:auto">TERRA</text>
+
+  <line x1="230" y1="142" x2="450" y2="142" stroke="#c4b8aa" stroke-width="0.5" mask="url(#imagine-text-gaps-t29wzy)" style="fill:rgb(0, 0, 0);stroke:rgb(106, 92, 80);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <text x="340" y="165" text-anchor="middle" style="fill:rgb(160, 144, 128);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Jost, sans-serif;font-size:12px;font-weight:200;text-anchor:middle;dominant-baseline:auto">VIAJES &amp; TOURS</text>
+
+</svg>

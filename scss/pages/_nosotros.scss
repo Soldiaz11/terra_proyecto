@@ -1,0 +1,98 @@
+// ===================================================
+// PÁGINA NOSOTROS
+// ===================================================
+
+// Bloque imagen + texto. justify-content: center evita el hueco gigante
+// que dejaba space-around; el gap controla la separación.
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: $ancho-maximo;
+  margin: 0 auto;
+
+  // En móvil la imagen y el texto se apilan en columna
+  @include responde(tablet) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.div_imagen img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+.info_nosotros {
+  flex: 1;
+
+  // Etiqueta superior "QUIÉNES SOMOS"
+  > p:first-child {
+    @extend %etiqueta-acento;
+    letter-spacing: 3px;
+  }
+}
+
+.titulo_nosotros {
+  @extend %titulo-serif;
+  text-align: left;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin: 10px 0;
+
+  @include responde(movil) { font-size: 34px; }
+}
+
+.parrafo_tres {
+  color: $color-gris;
+  font-family: $fuente-texto;
+  margin-top: 20px;
+  max-width: 520px; // limita el ancho del párrafo gris
+  line-height: 1.6;
+}
+
+// --- Sección de valores (tarjetas) ---
+.valores {
+  @extend %seccion-base;
+  text-align: center;
+
+  h2 {
+    @extend %titulo-serif;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .grid_valores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .valor {
+    background-color: $color-blanco;
+    border: 1px solid $color-borde;
+    border-radius: $radio;
+    padding: 24px;
+    width: 280px;
+    transition: transform 0.3s ease;
+
+    &:hover { transform: translateY(-6px); }
+
+    h3 {
+      @extend %titulo-serif;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: $color-gris;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}

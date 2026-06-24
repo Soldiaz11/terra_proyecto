@@ -1,0 +1,27 @@
+// ===================================================
+// VARIABLES — identidad visual de Terra Viajes
+// ===================================================
+
+// --- Colores ---
+$color-oscuro:  #16263F; // navy principal (header, footer, títulos)
+$color-acento:  #FF5A36; // naranja de marca (CTA, detalles)
+$color-acento-oscuro: #E64A26; // versión más oscura para hover
+$color-fondo:   #FFF3E6; // crema de fondo
+$color-gris:    #7C7060; // texto secundario
+$color-blanco:  #FFFFFF;
+$color-borde:   #ECE0CF; // bordes suaves de cards
+
+// --- Tipografías ---
+$fuente-titulo:    "Playfair Display", serif;
+$fuente-texto:     "Inter", sans-serif;
+$fuente-nunito:    "Nunito", sans-serif;
+$fuente-cormorant: "Cormorant Garamond", serif;
+
+// --- Breakpoints (responsive) ---
+$bp-movil:  600px;
+$bp-tablet: 900px;
+
+// --- Medidas reutilizables ---
+$radio:        16px;
+$radio-chico:  6px;
+$ancho-maximo: 1200px;

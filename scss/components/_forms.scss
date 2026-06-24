@@ -1,0 +1,65 @@
+// ===================================================
+// FORMULARIO DE CONTACTO
+// ===================================================
+
+.formulario {
+  margin-left: 20px;
+  margin-right: auto; // alinea el bloque del formulario a la izquierda
+  margin-top: 50px;
+  max-width: 500px; // limita el ancho para que no se estire de más
+
+  // Cada campo: label arriba del input (columna)
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $color-oscuro;
+    letter-spacing: 1px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: $radio-chico;
+    font-size: 14px;
+    font-family: $fuente-texto;
+    // Transición del borde al enfocar el campo
+    transition: border-color 0.25s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $color-acento;
+    }
+  }
+
+  @include responde(movil) {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 30px;
+  }
+}
+
+// Datos de contacto (escribinos / whatsapp / oficina)
+.escribinos {
+  margin-top: 30px;
+
+  p {
+    margin-bottom: 4px;
+    color: $color-gris;
+
+    // Los títulos en mayúscula (los pares impares) van en navy + spacing
+    &:nth-child(odd) {
+      color: $color-oscuro;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 12px;
+    }
+  }
+}

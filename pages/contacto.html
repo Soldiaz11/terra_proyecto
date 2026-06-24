@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Contacto | Terra Viajes</title>
+  <meta name="description" content="Contactá a Terra Viajes para armar tu próximo viaje. Escribinos por mail, WhatsApp o visitá nuestra oficina en Buenos Aires.">
+  <meta name="keywords" content="contacto, consulta, viajes, presupuesto, Terra Viajes">
+  <meta name="author" content="Terra Viajes">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto | Terra Viajes">
+  <meta property="og:description" content="Armemos juntos tu próximo viaje.">
+  <meta property="og:type" content="website">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Librería de animaciones AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- BANNER -->
+  <header>
+    <img class="logo" src="../images/terra_logo_wordmark.svg" alt="Logo de Terra Viajes">
+    <nav>
+      <ul class="navegador">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- ENCABEZADO -->
+    <div class="contacto" data-aos="fade-up">
+      <p>HABLEMOS</p>
+      <h1>Armemos tu próximo viaje</h1>
+    </div>
+
+    <!-- FORMULARIO (un solo form con todos los campos) -->
+    <section class="formulario" data-aos="fade-up">
+      <form action="/submit" method="post">
+
+        <div class="campo">
+          <label for="nombre">NOMBRE</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="destino">DESTINO</label>
+          <select id="destino" name="destino">
+            <option value="peru">Perú</option>
+            <option value="patagonia">Patagonia</option>
+            <option value="marruecos">Marruecos</option>
+            <option value="japon">Japón</option>
+            <option value="brasil">Brasil</option>
+            <option value="islandia">Islandia</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">MENSAJE</label>
+          <textarea id="mensaje" name="mensaje" rows="5"
+            placeholder="Contanos qué tenés en mente..."></textarea>
+        </div>
+
+        <button type="submit">ENVIAR CONSULTA</button>
+      </form>
+
+      <!-- DATOS DE CONTACTO -->
+      <div class="escribinos">
+        <p>ESCRIBINOS</p>
+        <p>hola@terraviajes.com</p>
+        <p>WHATSAPP</p>
+        <p>+54 11 5555 1234</p>
+        <p>OFICINA</p>
+        <p>Av. Corrientes 1234, BA</p>
+        <p>HORARIOS</p>
+        <p>Lun a Vie · 10 a 19h</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Todos los derechos reservados - Terra Viajes</p>
+  </footer>
+
+  <!-- Script de animaciones AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>

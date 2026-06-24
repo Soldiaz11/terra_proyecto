@@ -1,0 +1,68 @@
+// ===================================================
+// HEADER + NAVEGACIÓN
+// ===================================================
+
+header {
+  background-color: $color-oscuro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; // en pantallas chicas el nav baja debajo del logo
+
+  // El logo ocupa un % en desktop y se achica en móvil
+  .logo {
+    width: 20%;
+
+    @include responde(tablet) { width: 30%; }
+    @include responde(movil)  { width: 45%; }
+  }
+}
+
+// Lista de navegación
+.navegador {
+  @include flex-centrado(row);
+  color: $color-blanco;
+  list-style: none;
+  gap: 50px;
+  margin-right: 1rem;
+  font-family: $fuente-texto;
+
+  // Enlaces con transición de color al pasar el mouse
+  a {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-acento;
+    }
+  }
+
+  // En tablet/móvil reducimos el gap y permitimos que envuelva
+  @include responde(tablet) {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  @include responde(movil) {
+    width: 100%;
+    gap: 16px;
+    margin-right: 0;
+    padding: 12px 0;
+    justify-content: center;
+  }
+}
+
+// ===================================================
+// FOOTER
+// ===================================================
+
+footer {
+  background-color: $color-oscuro;
+  width: 100%;
+  padding: 20px 0;
+
+  p {
+    text-align: center;
+    color: $color-blanco;
+    font-family: $fuente-nunito;
+  }
+}

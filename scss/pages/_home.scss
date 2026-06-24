@@ -1,0 +1,59 @@
+// ===================================================
+// PÁGINA HOME — hero + destacados
+// ===================================================
+
+// El hero (primer bloque del index) se centra y aparece con animación
+.hero {
+  @include flex-centrado(column);
+  min-height: 70vh;
+  text-align: center;
+  padding: 40px 20px;
+  animation: aparecer 1s ease both; // entrada suave
+
+  p {
+    font-size: 20px;
+    margin: 20px;
+    font-family: $fuente-nunito;
+    color: $color-acento;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    font-family: $fuente-titulo;
+    line-height: 1.1;
+    color: $color-oscuro;
+
+    @include responde(tablet) { font-size: 44px; }
+    @include responde(movil)  { font-size: 32px; }
+  }
+}
+
+.parrafo_uno {
+  letter-spacing: 3px;
+}
+
+.parrafo_dos {
+  color: $color-gris !important;
+  font-size: 18px;
+}
+
+// Sección de destinos destacados
+.destacados {
+  @extend %seccion-base;
+  color: $color-blanco;
+
+  h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 32px;
+    color: $color-oscuro;
+    font-family: $fuente-titulo;
+  }
+}
+
+// Etiqueta naranja "DESTACADOS" / "CATÁLOGO"
+.etiqueta {
+  @extend %etiqueta-acento;
+  margin-left: 20px;
+}
